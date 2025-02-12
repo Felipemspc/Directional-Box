@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    
+    <title>Caixa Direcional</title>
+</head>
+
+<body>
+
+    <div>
+        <H1>Press a button</H1>
+    </div>
+    <div id="divPai">
+        <div id="divFilho">
+            <p></p>
+        </div>
+    </div>
+    <div>
+        <button id="buttonTop" onclick="cima()">Top</button>
+        <button id="buttonBot" onclick="baixo()">Bottom</button>
+        <button id="buttonMid" onclick="mid()">Mid</button>
+        <button id="buttonLeft" onclick="esquerda()">Left</button>
+        <button id="buttonRight" onclick="direita()">Right</button>
+    </div>
+</body>
+
+<script>
+    function cima() {
+
+        let box = document.getElementById('divFilho')
+        console.log('Top atual:', window.getComputedStyle(box).top);
+        if (box.style.top === '10px') {
+            alert('A caixa já está em cima.')
+        } else {
+            box.style.transform = ''
+            box.style.top = ''
+            box.style.bottom = ''
+            box.style.top = '10px'
+        }
+    }
+
+    function baixo() {
+        let box = document.getElementById('divFilho')
+        console.log('Bottom atual:', window.getComputedStyle(box).bottom);
+        if (box.style.bottom === '10px') {
+            alert('A caixa ja esta em baixo!')
+        } else {
+            box.style.transform = ''
+            box.style.top = ''
+            box.style.bottom = '10px'
+        }
+    }
+
+    function mid() {
+        let box = document.getElementById('divFilho')
+        if (box.style.top === '' && box.style.bottom === '' && box.style.left === '' && box.style.right === '') {
+            alert('Caixa já centralizada!')
+
+        } else {
+            box.style.top = ''
+            box.style.bottom = ''
+            box.style.left = ''
+            box.style.right = ''
+        }
+
+    }
+
+    function esquerda() {
+        let box = document.getElementById('divFilho')
+        let valorEsquerda = window.getComputedStyle(box).left
+        console.log('Left atual:', window.getComputedStyle(box).left);
+        if (valorEsquerda === '10px') {
+            alert('A caixa já esta na esquerda!')
+
+
+        } else {
+            box.style.transform = ''
+            box.style.right = ''
+            box.style.left = '10px'
+        }
+    }
+    function direita() {
+        let box = document.getElementById('divFilho')
+        console.log('Right atual:', window.getComputedStyle(box).right);
+        if (box.style.right === '10px') {
+            alert('A caixa já esta na direita!')
+        } else {
+            box.style.transform = ''
+            box.style.left = ''
+            box.style.right = '10px'
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

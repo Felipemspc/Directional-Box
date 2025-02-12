@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: bisque;
+}
+
+#divPai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+#divFilho {
+  
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: absolute;
+  border-radius: 25px;
+  
+}
+button{
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px;
+}
+h1{
+    color: rgba(255, 0, 0, 0.733);
+}
