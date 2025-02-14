@@ -13,7 +13,10 @@ body {
   width: 100%;
   background-color: rgba(250, 208, 222, 0.911);
   position: relative;
+  
 }
+
+
 
 #corpoCaixa {
   height: 100%;
@@ -49,8 +52,8 @@ body {
   flex-direction: column;
   width: 250px;
   text-align: center;
-  color: #f59530;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  color: rgb(245, 123, 10);
+  text-shadow:  #5c3270 0.1em 0.1em 0.1em;
   font-size: 1rem;
 }
 button {
@@ -79,6 +82,12 @@ button:active {
   text-shadow:  #5c3270 0.1em 0.1em 0.1em;
   font-weight: bold;
 }
+h2{
+    padding:10px;
+    
+    font-size: 1.5rem;
+    
+}
 
 #titulo {
   font-size: 2rem;
@@ -92,13 +101,7 @@ button:active {
 }
 
 
-h2{
-    padding:10px;
-    color: black;
-    font-size: 1.5rem;
-    text-shadow:  #5c3270 0.1em 0.1em 2em;
-    color: rgb(245, 123, 10);
-}
+
 
 
 @media (max-width:375px){
@@ -113,6 +116,9 @@ h2{
     #buttonsJustify,
 #buttonsAlign{
   width: 150px;
+}
+body{
+  background-position: center;
 }
   
 
