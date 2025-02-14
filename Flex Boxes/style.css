@@ -66,6 +66,7 @@ button {
     0px 4px 6px rgba(0, 0, 0, 0.5);
   display: inline-block;
   cursor: pointer;
+  margin: 3px;
 }
 
 button:active {
@@ -73,16 +74,23 @@ button:active {
     0px 2px 4px rgba(0, 0, 0, 0.5);
   transform: translateY(2px);
 }
+#guide{
+  color: rgb(245, 123, 10);
+  text-shadow:  #5c3270 0.1em 0.1em 0.1em;
+  font-weight: bold;
+}
+
 #titulo {
   font-size: 2rem;
   color: rgb(245, 123, 10);
   text-shadow:  #5c3270 0.1em 0.1em 0.1em;
-  top: 11%;
+  top: 10%;
   position: absolute;
   text-align: center;
   
   
 }
+
 
 h2{
     padding:10px;
@@ -92,3 +100,20 @@ h2{
     color: rgb(245, 123, 10);
 }
 
+
+@media (max-width:375px){
+    #caixa{
+      width: 80px;
+      height: 80px;
+    }
+    button{
+      font-size: 0.6rem;
+
+    }
+    #buttonsJustify,
+#buttonsAlign{
+  width: 150px;
+}
+  
+
+}
